@@ -1,2 +1,2 @@
-# Bash Scripts
+A repository of various config files and scripts. 
 
