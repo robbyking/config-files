@@ -13,11 +13,7 @@ export PS1="\[\e[0;34m\][\t]\[\e[m\] \e[1;37m\]$PWD\[\e[m\e[0;31m:\e[0m"
 
 #Hybrid prompt (current directory name only)
 #export PS1="\[\e[0;34m\][\t]\[\e[m\] \e[1;37m\](${PWD##*/})\[\e[m\e[0;31m:\e[0m"
-
 # 🦑 🌿 🌲 🌎 🦊 🚀 🦌 ⛺ ⛰ 🏔 🏕 🔥
-
-#Windows style prompt
-#export PS1="c:$PWD/:"
 
 #Colors
 #Black 0;30 Dark Gray 1;30
@@ -29,19 +25,19 @@ export PS1="\[\e[0;34m\][\t]\[\e[m\] \e[1;37m\]$PWD\[\e[m\e[0;31m:\e[0m"
 #Brown 0;33 Yellow 1;33
 #Light Gray 0;37 White 1;37
 
-alias ls='exa -bhHl'
+# See https://the.exa.website/
+alias ls='exa -bhHl --git'
 #alias ls='ls -GFl'
 
-alias ll='exa -bhHl'
+alias ll='exa -bhHl --git'
 #alias ll='ls -GFla'
 
-alias la='exa -bhHla'
-alias dir='exa -bhHla'
+alias la='exa -bhHla --git'
+alias dir='exa -bhHla --git'
 
 alias ..='cd ../'
 alias ...='cd ../../'
 
-alias ddd="cd ~/Library/Developer/Xcode/;rm -rfv DerivedData/*"
 alias filecount="ls -1R | grep -v ^$ | grep -v :$ | wc -l"
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -59,18 +55,21 @@ alias gd="git diff"
 alias gp="git pull"
 alias gs="git status"
 
-alias cdd="rm -rf ~/Library/Developer/Xcode/DerivedData/*"
-alias clean="rm -rf ~/Library/Developer/Xcode/DerivedData/*"
-
 alias reload="source ~/.bash_profile"
+alias tree="exa --tree"
 
 function cd() {
   command cd "$@";
   # PS1 with full directory path:
    export PS1="\[\e[0;34m\][\t]\[\e[m\] \e[1;37m\]$PWD\[\e[m\e[0;31m:\e[0m"
 
-  command exa -bhHl;
+  command exa -bhHl --git;
   echo -ne '\033]2;'$PWD'\007'
+}
+
+function clean() {
+	rm -rf ~/Library/Developer/Xcode/DerivedData/*
+	echo 'Successfully removed all Xcode derived data!'
 }
 
 function filetypecount() {
