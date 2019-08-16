@@ -1,0 +1,93 @@
+#TabsToolbar > * {
+	opacity: 100% !important;
+}
+
+#PersonalToolbar, #PersonalToolbar menuitem, #PersonalToolbar menu {
+	font-size: 12.5px !important;
+	height: 30px !important;
+}
+
+#PlacesToolbarItems .bookmark-item {
+	margin-left: 2px !important;
+	margin-right: 10px !important;
+	padding-bottom: 1px !important;
+	padding-top: 1px !important;
+}
+
+.tabbrowser-tab .tab-label {
+	font-size: 12px !important;
+	height: 36px !important;
+	padding-bottom: 1px !important;
+	padding-top: 8px !important;
+	border-top: 0 !important;
+}
+
+.tab-line[selected="false"] {
+	display: none !important;
+}
+
+.tab-line[selected="true"] {
+	display: none !important;	
+}
+
+tab[selected="true"] {
+	border-top: 0px !important;
+	padding-top: 0px !important;
+}
+
+.tab-background {
+	border-image: none !important;
+/* border-radius: 2px 2px 0px 0px !important; */
+}
+
+/*  Change divider margins for rounded tabs */
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+	margin-top: 1px !important;
+}
+
+.titlebar-placeholder {
+	border-right: none !important;
+}
+
+/* Style the divider line before the first tab */
+.titlebar-spacer[type="pre-tabs"] {
+	border-right: none !important;
+}
+
+/* If the divider line before the first tab is hidden, add a left border to the first tab when it's selected. */
+.tabbrowser-tab:first-child[selected="true"] {
+	border-left: solid 1px #aaa !important;
+}
+
+/* Hide the close tab button */
+.tabbrowser-tab .tab-close-button {
+/* 	display: none !important; */
+	opacity: .1;
+}
+
+/* Show the close tab button on hover */
+.tabbrowser-tab:hover .tab-close-button {
+		opacity: .6;
+/* 	display: -moz-box !important; */
+}
+
+#TabsToolbar .tab-background {
+	/* border-right: 0px !important; */
+	/* border-left: 0px !important; */
+}
+
+.tabbrowser-tab {
+	min-width: 1em !important;
+	clip-width: 1em !important;
+}
+
+/* Hide FavIcon in Tab */
+.tab-icon-image {
+	display: none;
+}
+
+/* Center tab label text */
+.tab-label {
+	-moz-box-flex: 1 !important; 
+	text-align: center !important;
+}
