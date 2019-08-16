@@ -14,12 +14,24 @@
 	padding-top: 1px !important;
 }
 
+/* Tab label display settings */
 .tabbrowser-tab .tab-label {
 	font-size: 12px !important;
-	height: 36px !important;
+	height: 32px !important;
 	padding-bottom: 1px !important;
-	padding-top: 8px !important;
+	padding-top: 6px !important;
 	border-top: 0 !important;
+}
+
+/* Hide FavIcon in Tab */
+.tab-icon-image {
+	display: none;
+}
+
+/* Center tab label text */
+.tab-label {
+/*     -moz-box-flex: 1 !important; 
+	text-align: center !important; */
 }
 
 .tab-line[selected="false"] {
@@ -27,7 +39,7 @@
 }
 
 .tab-line[selected="true"] {
-	display: none !important;	
+	display: none !important;
 }
 
 tab[selected="true"] {
@@ -81,13 +93,3 @@ tab[selected="true"] {
 	clip-width: 1em !important;
 }
 
-/* Hide FavIcon in Tab */
-.tab-icon-image {
-	display: none;
-}
-
-/* Center tab label text */
-.tab-label {
-	-moz-box-flex: 1 !important; 
-	text-align: center !important;
-}
