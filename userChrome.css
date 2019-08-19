@@ -9,7 +9,7 @@
 
 #PlacesToolbarItems .bookmark-item {
 	margin-left: 2px;
-	margin-right: 10px;
+	margin-right: 10px !important;;
 	padding-bottom: 1px;
 	padding-top: 1px;
 /* 	text-transform: lowercase; */
