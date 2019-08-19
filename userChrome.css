@@ -1,64 +1,68 @@
 #TabsToolbar > * {
-	opacity: 100% !important;
+	opacity: 100%;
 }
 
 #PersonalToolbar, #PersonalToolbar menuitem, #PersonalToolbar menu {
-	font-size: 12.5px !important;
-	height: 30px !important;
+	font-size: 12.5px;
+	height: 30px;
 }
 
 #PlacesToolbarItems .bookmark-item {
-	margin-left: 2px !important;
-	margin-right: 10px !important;
-	padding-bottom: 1px !important;
-	padding-top: 1px !important;
+	margin-left: 2px;
+	margin-right: 10px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+/* 	text-transform: lowercase; */
 }
 
 /* Tab label display settings */
 .tabbrowser-tab .tab-label {
-	font-size: 12px !important;
-	height: 32px !important;
-	padding-bottom: 1px !important;
-	padding-top: 6px !important;
-	border-top: 0 !important;
+	font-size: 12px;
+	height: 32px;
+	padding-bottom: 1px;
+	padding-top: 6px;
+	border-top: 0;
+/* 	text-transform: lowercase; */
 }
 
 /* Hide FavIcon in Tab */
 .tab-icon-image {
-	display: none;
+    display: none;
+/* 	clip-path: circle(8px at center); */
 }
 
 /* Center tab label text */
 .tab-label {
-/*     -moz-box-flex: 1 !important; 
-	text-align: center !important; */
-}
+/*     -moz-box-flex: 1; 
+	text-align: center;  */
+	text-transform: lowercase;
+}   
 
 .tab-line[selected="false"] {
-	display: none !important;
+	display: none;
 }
 
 .tab-line[selected="true"] {
-	display: none !important;
+	display: none;
 }
 
 tab[selected="true"] {
-	border-top: 0px !important;
-	padding-top: 0px !important;
+	border-top: 0px;
+	padding-top: 0px;
 }
 
 .tab-background {
-	border-image: none !important;
-/* border-radius: 2px 2px 0px 0px !important; */
+	border-image: none;
+/* border-radius: 2px 2px 0px 0px; */
 }
 
 /*  Change divider margins for rounded tabs */
 .tabbrowser-tab::before, .tabbrowser-tab::after {
-	margin-top: 1px !important;
+	margin-top: 1px;
 }
 
 .titlebar-placeholder {
-	border-right: none !important;
+	border-right: none;
 }
 
 /* Style the divider line before the first tab */
@@ -71,25 +75,23 @@ tab[selected="true"] {
 	border-left: solid 1px #aaa !important;
 }
 
-/* Hide the close tab button */
+/* Close tab button opacity */
 .tabbrowser-tab .tab-close-button {
-/* 	display: none !important; */
+/* 	display: none; */
 	opacity: .1;
 }
 
-/* Show the close tab button on hover */
+/* Close tab button hover opacity */
 .tabbrowser-tab:hover .tab-close-button {
-		opacity: .6;
-/* 	display: -moz-box !important; */
+	opacity: .6;
 }
 
 #TabsToolbar .tab-background {
-	/* border-right: 0px !important; */
-	/* border-left: 0px !important; */
+	/* border-right: 0px; */
+	/* border-left: 0px; */
 }
 
 .tabbrowser-tab {
-	min-width: 1em !important;
-	clip-width: 1em !important;
+	min-width: 1em;
+	clip-width: 1em;
 }
-
