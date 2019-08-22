@@ -12,30 +12,28 @@
 	margin-right: 10px !important;;
 	padding-bottom: 1px;
 	padding-top: 1px;
-/* 	text-transform: lowercase; */
 }
 
 /* Tab label display settings */
 .tabbrowser-tab .tab-label {
 	font-size: 12px;
-	height: 32px;
-	padding-bottom: 1px;
-	padding-top: 6px;
+/* 	height: 36px; */
+/*	padding-bottom: 1px; */
+/*  padding-top: 8px; */
+	padding-left: 8px; 
 	border-top: 0;
-/* 	text-transform: lowercase; */
 }
 
 /* Hide FavIcon in Tab */
 .tab-icon-image {
-    display: none;
-/* 	clip-path: circle(8px at center); */
+/*  display: none; */
+/*  clip-path: circle(8px at center); */
 }
 
 /* Center tab label text */
 .tab-label {
-/*     -moz-box-flex: 1; 
-	text-align: center;  */
-	text-transform: lowercase;
+    /* -moz-box-flex: 1; */
+    /* text-align: center;  */
 }   
 
 .tab-line[selected="false"] {
@@ -44,6 +42,7 @@
 
 .tab-line[selected="true"] {
 	display: none;
+/* 	background-color: #bbb !important;;  */
 }
 
 tab[selected="true"] {
@@ -51,14 +50,19 @@ tab[selected="true"] {
 	padding-top: 0px;
 }
 
-.tab-background {
-	border-image: none;
-/* border-radius: 2px 2px 0px 0px; */
+/* Rounded Tabs */
+.tab-background[selected="true"] {
+   	border-image: none;
+/* border-radius: 3px 3px 0px 0px;	 */
+	border-left: solid 1px #aaaaaa !important;
+	border-right: solid 1px #aaaaaa !important;   
 }
 
-/*  Change divider margins for rounded tabs */
+/* Tab divider */
+/* (Set display to none for rouned tabs.) */
 .tabbrowser-tab::before, .tabbrowser-tab::after {
-	margin-top: 1px;
+	margin-top: 1px !important;
+	display: none !important;
 }
 
 .titlebar-placeholder {
@@ -68,11 +72,7 @@ tab[selected="true"] {
 /* Style the divider line before the first tab */
 .titlebar-spacer[type="pre-tabs"] {
 	border-right: none !important;
-}
-
-/* If the divider line before the first tab is hidden, add a left border to the first tab when it's selected. */
-.tabbrowser-tab:first-child[selected="true"] {
-	border-left: solid 1px #aaa !important;
+	width: 10px !important;
 }
 
 /* Close tab button opacity */
@@ -84,6 +84,16 @@ tab[selected="true"] {
 /* Close tab button hover opacity */
 .tabbrowser-tab:hover .tab-close-button {
 	opacity: .6;
+}
+
+/* Hide page actions menu */
+#pageActionButton {
+	display: none;
+}
+
+/* Hide overflow menu */
+#nav-bar-overflow-button { 
+	display: none !important;
 }
 
 #TabsToolbar .tab-background {
