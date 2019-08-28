@@ -38,19 +38,19 @@
 }
 
 .tab-line[selected="true"] {
-	display: none;
-/* 	background-color: #bbb !important;;  */
+ 	display: none; 
+/* 	background-color: #333 !important; */
 }
 
 tab[selected="true"] {
-	border-top: 0px;
-	padding-top: 0px;
+	border-top: 0px !important;
+	padding-top: 0px !important;
 }
 
 /* Rounded Tabs */
 .tab-background[selected="true"] {
    	border-image: none;
-/* border-radius: 3px 3px 0px 0px;	 */
+    border-radius: 4px 4px 0px 0px;	
 	border-left: solid 1px #aaaaaa !important;
 	border-right: solid 1px #aaaaaa !important;   
 }
@@ -58,7 +58,7 @@ tab[selected="true"] {
 /* Tab divider */
 /* (Set display to none for rouned tabs.) */
 .tabbrowser-tab::before, .tabbrowser-tab::after {
-	margin-top: 1px !important;
+/* 	margin-top: 1px !important; */
 	display: none !important;
 }
 
@@ -101,4 +101,9 @@ tab[selected="true"] {
 .tabbrowser-tab {
 	min-width: 1em;
 	clip-width: 1em;
+}
+
+/* Style the navigation bar (back and forward buttons, address bar, et. al.) */
+#nav-bar-customization-target {
+	padding-left: 5px !important;
 }
