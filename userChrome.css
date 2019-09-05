@@ -1,7 +1,3 @@
-#TabsToolbar > * {
-	opacity: 1;
-}
-
 #PersonalToolbar, #PersonalToolbar menuitem, #PersonalToolbar menu {
 	font-size: 12px;
 	height: 28px;
@@ -11,12 +7,72 @@
 	margin-right: 10px !important;
 }
 
+#TabsToolbar .tab-background {
+	/* border-right: 0px; */
+	/* border-left: 0px; */
+}
+
+/* Style the navigation bar (back and forward buttons, address bar, et. al.) */
+#nav-bar-customization-target {
+	padding-left: 5px !important;
+}
+
+/* Hide overflow menu */
+#nav-bar-overflow-button {
+	display: none !important;
+}
+
+/* Hide page actions menu */
+#pageActionButton {
+	display: none;
+}
+
+#titlebar {
+	border: 0 !important;
+}
+
+#urlbar {
+    border-radius: 15px !important;
+}
+
+/* Rounded Tabs */
+.tab-background {
+   	border-image: none;
+    border-radius: 4px 4px 0px 0px !important;
+	border-left: solid 0px #aaaaaa !important;
+	border-right: solid 0px #aaaaaa !important;
+	border-top: solid 0px #aaaaaa !important;
+}
+
+/* Tab divider */
+/* (Set display to none for rounded tabs.) */
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+/* 	margin-top: 1px !important; */
+	display: none !important;
+}
+
 /* Tab label display settings */
 .tabbrowser-tab .tab-label {
 	font-size: 12px;
 /*  height: 30px; */
 /*  padding-top: 9px; */
 /*  padding-left: 3px;  */
+}
+
+/* Close tab button dispaly and opacity */
+.tabbrowser-tab .tab-close-button {
+/* 	display: none; */
+	opacity: .1;
+}
+
+/* Close tab button hover opacity */
+.tabbrowser-tab:hover .tab-close-button {
+	opacity: .6;
+}
+
+.tabbrowser-tab {
+    min-width: 1em;
+	clip-width: 1em;
 }
 
 /* FavIcon in Tab */
@@ -31,7 +87,7 @@
 .tab-label {
     /* -moz-box-flex: 1; */
     /* text-align: center;  */
-}   
+}
 
 .tab-line {
 	display: none !important;
@@ -42,24 +98,8 @@
 }
 
 .tab-line[selected="true"] {
- 	display: none; 
+ 	display: none;
 /* 	background-color: #333 !important; */
-}
-
-/* Rounded Tabs */
-.tab-background {
-   	border-image: none;
-    border-radius: 4px 4px 0px 0px !important;	
-	border-left: solid 0px #aaaaaa !important;
-	border-right: solid 0px #aaaaaa !important;   
-	border-top: solid 0px #aaaaaa !important;
-}
-
-/* Tab divider */
-/* (Set display to none for rouned tabs.) */
-.tabbrowser-tab::before, .tabbrowser-tab::after {
-/* 	margin-top: 1px !important; */
-	display: none !important;
 }
 
 .titlebar-placeholder {
@@ -70,46 +110,6 @@
 .titlebar-spacer[type="pre-tabs"] {
 	border-right: none !important;
 	width: 10px !important;
-}
-
-/* Close tab button opacity */
-.tabbrowser-tab .tab-close-button {
-/* 	display: none; */
-	opacity: .1;
-}
-
-/* Close tab button hover opacity */
-.tabbrowser-tab:hover .tab-close-button {
-	opacity: .6;
-}
-
-/* Hide page actions menu */
-#pageActionButton {
-	display: none;
-}
-
-/* Hide overflow menu */
-#nav-bar-overflow-button { 
-	display: none !important;
-}
-
-#TabsToolbar .tab-background {
-	/* border-right: 0px; */
-	/* border-left: 0px; */
-}
-
-.tabbrowser-tab {
-	min-width: 1em;
-	clip-width: 1em;
-}
-
-/* Style the navigation bar (back and forward buttons, address bar, et. al.) */
-#nav-bar-customization-target {
-	padding-left: 5px !important;
-}
-
-#titlebar {
-	border: 0 !important;
 }
 
 /* The border between the address bar and the tab row */
