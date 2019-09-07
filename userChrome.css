@@ -35,10 +35,15 @@
     border-radius: 15px !important;
 }
 
+/* The border between the address bar and the tab row */
+.browser-toolbar {
+	box-shadow: none !important;
+}
+
 /* Rounded Tabs */
 .tab-background {
    	border-image: none;
-    border-radius: 4px 4px 0px 0px !important;
+    border-radius: 6px 6px 0px 0px !important;
 	border-left: solid 0px #aaaaaa !important;
 	border-right: solid 0px #aaaaaa !important;
 	border-top: solid 0px #aaaaaa !important;
@@ -112,7 +117,7 @@
 	width: 10px !important;
 }
 
-/* The border between the address bar and the tab row */
-.browser-toolbar {
-	box-shadow: none !important;
+.toolbarbutton-text {
+	margin-left: 5px !important;;
 }
+
