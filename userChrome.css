@@ -1,6 +1,6 @@
 #PersonalToolbar, #PersonalToolbar menuitem, #PersonalToolbar menu {
 	font-size: 12px;
-	height: 28px;
+	height: 32px;
 }
 
 #PlacesToolbarItems .bookmark-item {
@@ -59,8 +59,8 @@
 /* Tab label display settings */
 .tabbrowser-tab .tab-label {
 	font-size: 12px;
-/*  height: 30px; */
-/*  padding-top: 9px; */
+    height: 34px;
+    padding-top: 7px;
 /*  padding-left: 3px;  */
 }
 
@@ -68,6 +68,16 @@
 .tabbrowser-tab .tab-close-button {
 /* 	display: none; */
 	opacity: .1;
+}
+
+/* Non-selected tabs hover state */
+.tabbrowser-tab:hover .tab-content:not([selected="true"]) {
+    border-image: none;
+    border-radius: 6px 6px 0px 0px !important;
+	border-left: solid 0px #aaaaaa !important;
+	border-right: solid 0px #aaaaaa !important;
+	border-top: solid 0px #aaaaaa !important;
+    background-color:  #eee !important;
 }
 
 /* Close tab button hover opacity */
@@ -121,3 +131,8 @@
 	margin-left: 5px !important;;
 }
 
+/* Back/forward button styling */
+ .toolbarbutton-icon {
+  background-color: unset !important;
+  border: none !important;
+}
