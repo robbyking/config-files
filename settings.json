@@ -1,0 +1,110 @@
+
+// https://code.visualstudio.com/api/references/theme-color
+
+// To see all available shortcuts in the editor: ⌘ + k + s
+{
+	"breadcrumbs.enabled": true,
+	"debug.toolBarLocation": "docked",
+	"editor.cursorBlinking": "phase",
+	"editor.cursorSmoothCaretAnimation": false,
+	"editor.cursorStyle": "line",
+	"editor.fontFamily": "JetBrains Mono NL",
+	"editor.fontLigatures" : true,
+	"editor.fontSize": 14,
+	"editor.fontWeight": "400",
+	"editor.highlightActiveIndentGuide": false,
+	"editor.lineHeight": 18,
+	"editor.matchBrackets": "never",
+	"editor.padding.top": 3,
+	"editor.renderIndentGuides": false,
+	"editor.renderWhitespace": "none",
+	"editor.tokenColorCustomizations" : {
+
+		// Cool Grey City
+		// "functions": "#FFA3B7",
+		// "keywords": "#9ACAE7",
+		// "strings": "#C1A9C8",
+		// "numbers": "#B1C69D",
+		// "comments": "#A9A9A9",
+		// "types": "#FFEE86",
+		// "variables": "#9ACAE7",
+
+		// Electric Grey City
+		"functions": "#FC5FA3",
+		"keywords": "#5EDFFF",
+		"strings": "#DABAFF",
+		"numbers": "#60E078",
+		"comments": "#A9A9A9",
+		"types": "#FFEE86",
+		"variables": "#5EDFFF",
+	},
+
+
+	"files.autoSave": "onFocusChange",
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		".*": true
+	},
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"jsonTreeView.customizedViewActivated": true,
+    "jsonTreeView.customizedViewMapping": {
+        "items": "id"
+    },
+	"workbench.colorCustomizations": {
+
+		//Dark Theme
+		// "statusBar.background": "#333333",
+		// "statusBar.foreground": "#cccccc",
+		// "list.hoverBackground": "#333333",
+
+		// /*
+		//Light Theme
+		"activityBar.activeBackground": "#f6f6f6",
+		"activityBar.activeForeground": "#474747",
+		"activityBar.background": "#f6f6f6",
+		"activityBar.forground": "#474747",
+		"activityBar.inactiveForeground": "#474747",
+		"editorGroupHeader.tabsBackground": "#d1d1d1",
+		"gitDecoration.modifiedResourceForeground": "#474747",
+		"gitDecoration.untrackedResourceForeground": "#474747",
+		"list.activeSelectionBackground": "#D1ecc7",
+		"list.activeSelectionForeground": "#474747",
+		"list.focusBackground": "#B2C89D",
+		"list.focusForeground": "#000000",
+		"list.hoverBackground": "#f6f6f6",
+		"list.hoverForeground": "#474747",
+		"list.inactiveSelectionBackground": "#B2C89D",
+		"list.inactiveSelectionForeground": "#ffffff",
+		"sideBar.background": "#f6f6f6",
+		"sideBarSectionHeader.background": "#f6f6f6",
+		"sideBarSectionHeader.border": "#f6f6f6",
+		"sideBarSectionHeader.foreground": "#474747",
+		"sideBarTitle.foreground": "#474747",
+		"statusBar.background": "#f6f6f6",
+		"statusBar.foreground": "#474747",
+		"tab.activeBackground": "#f6f6f6",
+		"tab.activeForeground": "#474747",
+		"tab.border": "#d1d1d1",
+		"tab.inactiveBackground": "#d1d1d1",
+		"tab.inactiveForeground": "#666666",
+		"titleBar.activeBackground": "#f6f6f6",
+		"titleBar.activeForeground": "#f6f6f6",
+		"sideBar.foreground": "#474747",
+		//*/
+	},
+	"window.autoDetectColorScheme": false,
+	"window.nativeTabs": true,
+	"window.zoomLevel": 0,
+	"workbench.activityBar.visible": false,
+	"workbench.colorTheme": "Visual Studio Dark",
+	"workbench.editor.tabSizing": "fit",
+	"workbench.iconTheme": "vs-minimal",
+	"workbench.preferredLightColorTheme": "Default Dark+",
+	"workbench.tree.renderIndentGuides": "none",
+	"editor.minimap.enabled": true,
+}
