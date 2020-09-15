@@ -29,7 +29,6 @@ alias updatescreenshots="defaults write com.apple.screencapture location ~/Pictu
 alias {unloadvpn,unloadglobalprotect,killvpn}="launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
 alias {loadvpn,loadglobalprotect,startvpn}="launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
 
-
 function cd() {
   command cd "$@";
   setPS1
