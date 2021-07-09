@@ -11,8 +11,7 @@ alias grep='grep --color=auto'
 alias gb="git branch"
 alias gs="git status"
 alias gl="git log"
-alias gp="git push"
-alias discardAllChanges="git checkout -- ."
+alias gr="git reset --soft HEAD~1"
 
 # See https://the.exa.website/
 alias la='exa -bhHla --git'
@@ -29,6 +28,9 @@ alias updatescreenshots="defaults write com.apple.screencapture location ~/Pictu
 alias {unloadvpn,unloadglobalprotect,killvpn}="launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
 alias {loadvpn,loadglobalprotect,startvpn}="launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
 
+# Other aliases
+alias dd="clean()"
+
 function cd() {
   command cd "$@";
   setPS1
@@ -40,7 +42,7 @@ function clean() {
 	rm -rf ~/.Trash/*
 	DIR="/Users/robbking/Library/Developer/Xcode/DerivedData"
 	if [ "$(ls $DIR)" ]; then
-		echo 'Something fucked up, try cleaning manually.'
+		echo 'Something went wrong, try cleaning manually.'
 		open $DIR
 	else
 	    echo 'Successfully removed all Xcode derived data!'
@@ -52,9 +54,9 @@ function filetypecount() {
     find . -iname "*.$@" | wc -l
 }
 
-function grepcopy() {
-    command grep "$@" | pbcopy
-    pbpaste
+function cgrep() {
+	command grep "$@" |  sed 's/^ *//g' | tr '\n' ' ' | pbcopy
+	pbpaste
 }
 
 function setPS1() {
@@ -72,13 +74,13 @@ function setPS1() {
 	#Yellow	1;33
 
 	#Grey prompt
-	#export PS1="\e[2m[\t]\e[0m $PWD\e[0;31m:\e[0m"
+	#export PS1="\n\e[2m[\t]\e[0m $PWD\e[0;31m:\e[0m"
 
 	#Blue prompt
-	#export PS1="\[\e[0;34m\][\t]\[\e[m\] $PWD\e[0;31m:\e[0m"
+	#export PS1="\n\[\e[0;34m\][\t]\[\e[m\] $PWD\e[0;31m:\e[0m"
 
 	#Hybrid prompt
-	export PS1="\[\e[0;34m\][\t]\[\e[m\] \e[1;37m\]$PWD\[\e[m\e[0;31m:\e[0m"
+	export PS1="\n\[\e[0;34m\][\t]\[\e[m\] \e[1;37m\]$PWD\[\e[m\e[0;31m:\e[0m"
 
 	#Windows style prompt
 	# export PS1="c:$PWD/"
@@ -120,3 +122,4 @@ fi
 
 #Move to git directory and check status
 cd ~/Developer/ios_core
+git status
