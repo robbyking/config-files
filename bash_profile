@@ -9,8 +9,9 @@ alias grep='grep --color=auto'
 
 # Git shortcuts
 alias gb="git branch"
+alias gd="git diff"
 alias gs="git status"
-alias gl="git log"
+alias gl="git log --graph"
 alias gr="git reset --soft HEAD~1"
 
 # See https://the.exa.website/
@@ -28,13 +29,16 @@ alias updatescreenshots="defaults write com.apple.screencapture location ~/Pictu
 alias {unloadvpn,unloadglobalprotect,killvpn}="launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
 alias {loadvpn,loadglobalprotect,startvpn}="launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
 
-# Other aliases
-alias dd="clean()"
+# Hide macOS Upgrade Notifications
+alisas hideupdates="defaults write com.apple.systempreferences AttentionPrefBundleIDs 0"
 
 function cd() {
   command cd "$@";
   setPS1
   command exa -bhHll --git
+# if [ -d .git ]; then
+#     command git status
+# fi;
 }
 
 function clean() {
@@ -82,6 +86,10 @@ function setPS1() {
 	#Hybrid prompt
 	export PS1="\n\[\e[0;34m\][\t]\[\e[m\] \e[1;37m\]$PWD\[\e[m\e[0;31m:\e[0m"
 
+	#Emoji prompt
+	#export PS1="\n\[\e[0;34m\][\t]\[\e[m\] 🚀 \e[1;37m\]$PWD\[\e[m\e[0;31m:\e[0m"
+	# 🦑 🌿 🌲 🌎 🦊 🚀 🦌 ⛺ ⛰ 🏔 🏕 🔥 👨🏻‍🚀
+
 	#Windows style prompt
 	# export PS1="c:$PWD/"
 
@@ -121,5 +129,5 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 #Move to git directory and check status
-cd ~/Developer/ios_core
+#cd ~/Developer/ios_core
 git status
