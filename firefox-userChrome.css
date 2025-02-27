@@ -1,0 +1,47 @@
+
+
+:root {
+	--tab-min-height: 32px !important; 
+}		
+
+.tab-background[selected] {
+	box-shadow: none !important;
+}
+
+.tab-text {
+	font-family: SF Pro;
+	font-size: 12px;
+	font-weight: 400;
+	text-shadow: none;
+	letter-spacing: -0.1px;
+}
+
+#tabbrowser-tabs {
+	height: var(--tab-min-height);
+	padding-inline-start: 0px !important;
+}
+
+#TabsToolbar {
+	margin-top: 0px !important; 
+}
+
+
+@media (prefers-color-scheme: light) {		
+	.tab-content[selected] {
+		background-color: #f9f9fb !important;
+	}
+	
+	.tab-text {
+		color: #000;
+	}
+}
+
+@media (prefers-color-scheme: dark) {		
+	.tab-content[selected] {
+		background-color: #060604 !important;
+	}
+	
+	.tab-text {
+		color: #fff;
+	}
+}
