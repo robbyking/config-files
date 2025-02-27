@@ -23,6 +23,10 @@ PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜$reset_color )"
 
 # PWD (Fast!)
 PROMPT+='$fg[cyan]%* $fg[blue][$fg[red]%d$fg[blue]] $fg[yellow]✘:$reset_color' 
+# ⚛︎ ✘  ⌘ ⚡︎ ⚙︎ ⚒︎ ⚔︎ ⚜︎ ⚝︎ ⚞︎ ⚟︎ ⚠︎ ⚡︎ ⚢︎ ⚣︎ ⚤︎ ⚥︎ ⚦︎ ⚧︎ ⚨︎ ⚩︎ ⚪︎ ⚫︎ ⚬︎ ⚭︎ ⚮︎ ⚯︎ ⚰︎ ⚱︎ ⚲︎ ⚳︎ ⚴︎ ⚵︎ ⚶︎ ⚷︎
+# ⚸︎ ⚹︎ ⚺︎ ⚻︎ ⚼︎ ⚽︎ ⚾︎ ⚿︎ ⛀︎ ⛁︎ ⛂︎ ⛃︎ ⛄︎ ⛅︎ ⛆︎ ⛇︎ ⛈︎ ⛉︎ ⛊︎ ⛋︎ ⛌︎ ⛍︎ ⛎︎ ⛏︎ ⛐︎ ⛑︎ ⛒︎ ⛓︎ ⛔︎ ⛕︎ ⛖︎ ⛗︎ ⛘︎ ⛙︎ ⛚︎ 
+# ⛛︎ ⛜︎ ⛝︎ ⛞︎ ⛟︎ ⛠︎ ⛡︎ ⛢︎ ⛣︎ ⛤︎ ⛥︎ ⛦︎ ⛧︎ ⛨︎ ⛩︎ ⛪︎ ⛫︎ ⛬︎ ⛭︎ ⛮︎ ⛯︎ ⛰︎ ⛱︎ ⛲︎ ⛳︎ ⛴︎
+
 
 # ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg_bold[blue]%}git:(%{$fg[red]%}"
 # ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
@@ -56,11 +60,12 @@ alias xc="/Applications/Xcode\ 14.3.1.app/Contents/MacOS/Xcode"
 # Dev shortcuts
 alias ft="./tools/npe/npe generate feature-toggles"
 alias dl="xcrun simctl openurl booted \"ebay://link?nav=webview&url=https://www.ebay.co.uk/explore\""
+alias appversion='~/Developer/Bash/version-number.sh'
 
-# See https://the.exa.website/
-alias la='exa -bhHla'
-alias ll='exa -bhHl'
-alias ls='exa -bhHl'
+# See https://github.com/eza-community/eza
+alias la='eza -bhHla'
+alias ll='eza -bhHl'
+alias ls='eza -bhHl'
 
 # Reload your zsh profile
 alias reload="source ~/.zshrc"
@@ -106,7 +111,7 @@ function cgrep() {
 
 function cd() {
   builtin cd "$@";
-  command exa -bhHll
+  command eza -bhHll
 }
 
 function listFunctions() {
@@ -137,3 +142,6 @@ function gitsearch() {
 	git stash show -p $stash | grep "$@" && echo "Found in $stash"
   done
 }
+
+# Setting NodeJS Extra CA Path
+export NODE_EXTRA_CA_CERTS="/Library/Application Support/Netskope/STAgent/download/nscacert_combined.pem"
