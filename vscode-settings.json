@@ -1,0 +1,187 @@
+
+// https://code.visualstudio.com/api/references/theme-color
+// To see all available shortcuts in the editor: ⌘ + k + s
+{
+	"breadcrumbs.enabled": true,
+	"debug.toolBarLocation": "docked",
+	"editor.cursorBlinking": "phase",
+	"editor.cursorSmoothCaretAnimation": "off",
+	"editor.cursorStyle": "line",
+	"editor.fontFamily": "SF Mono",
+	"editor.fontLigatures" : true,
+	"editor.fontSize": 15,
+	"editor.fontWeight": "400",
+	"editor.guides.highlightActiveIndentation": false,
+	"editor.guides.indentation": false,
+	"editor.insertSpaces": false,
+	"editor.lineHeight": 16,
+	"editor.matchBrackets": "never",
+	"editor.padding.top": 3,
+	"editor.renderControlCharacters": true,
+	"editor.renderLineHighlight": "all",
+	"editor.renderWhitespace": "none",
+	"files.autoSave": "onFocusChange",
+	"files.exclude": {
+		".*": true,
+		"**/.*": false,
+		"**/.DS_Store": true,
+		"**/.git": true,
+		"**/.hg": true,
+		"**/.svn": true,
+		"**/CVS": true
+	},
+	"files.insertFinalNewline": true,
+	"go.toolsManagement.autoUpdate": true,
+	"jsonTreeView.customizedViewActivated": true,
+    "jsonTreeView.customizedViewMapping": {
+        "items": "id"
+    },
+	
+	"lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+	"terminal.integrated.fontFamily" : "SF Mono",
+	"terminal.integrated.fontSize" : 13,
+	"terminal.integrated.letterSpacing" : 0.0,
+	"terminal.integrated.lineHeight" : 0.0,
+	"terminal.integrated.fontWeight" : 400,
+	"terminal.integrated.fontWeightBold" : 400,
+
+	"window.autoDetectColorScheme": true,
+	"window.nativeTabs": true,
+	
+	"editor.tokenColorCustomizations" : {
+		
+		// Electric Grey City
+		// Use "Dark (Visual Studio)" color scheme
+		"functions": "#F831CE",
+		"keywords": "#5EDFFF",
+		"strings": "#D3A3FF",
+		"numbers": "#60E078",
+		"comments": "#A9A9A9",
+		"types": "#FFEE86",
+		"variables": "#5EDFFF",
+		
+		// Apple II
+		// Use Light Modern
+		// "functions": "#1B74CB",
+		// "keywords": "#1B74CB",
+		// "strings": "#BD3613",
+		// "numbers": "#BD3613",
+		// "comments": "#A9A9A9",
+		// "types": "#1B74CB",
+		// "variables": "#728C00",
+	},
+	
+	
+	"workbench.colorCustomizations": {
+		//* Editor themes */
+
+		//* Electric Grey City
+		// Visual Studio Dark
+		"editor.selectionBackground": "#185FA4",
+		"editor.background": "#000000",
+		"editor.lineHighlightBackground": "#1c4063",
+		
+
+
+		// Apple II
+		// Use Light Modern
+		// "editor.selectionBackground": "#FFEC74",
+		// "editor.background": "#ECEAE0",
+		// "editor.lineHighlightBackground": "#D0EACD",
+		// "editor.foldBackground": "#F1EFEA",
+
+		
+		// Shared Window Settings
+		"editorCursor.background": "#A6E22D",
+		"editorCursor.foreground": "#A6E22D",
+		"editorGroupHeader.tabsBackground": "#363537",
+		"list.activeSelectionBackground": "#1469D1",
+		"list.focusBackground": "#B2C89D",
+		"list.focusForeground": "#000000",
+		"list.hoverBackground": "#333333",
+		"list.hoverForeground": "#ffffff",
+		"list.inactiveSelectionBackground": "#1469D1",
+		"list.inactiveSelectionForeground": "#ffffff",
+		"sideBar.background": "#2c2d2f",
+		"sideBar.foreground": "#ffffff",
+		"sideBarSectionHeader.background": "#5c5c6e",
+		"sideBarSectionHeader.border": "#353536",
+		"sideBarSectionHeader.foreground": "#FFFFFF",
+		"sideBarTitle.foreground": "#FFFFFF",
+		"statusBar.background": "#333333",
+		"statusBar.foreground": "#cccccc",
+		"tab.activeBackground": "#274060",
+		"tab.activeForeground": "#ffffff",
+		"tab.border": "#333333",
+		"tab.inactiveBackground": "#333333",
+		"tab.inactiveForeground": "#FFFFFF",
+		"titleBar.activeBackground": "#000000",
+		"titleBar.activeForeground": "#FFFFFF",
+
+		// Light Mode Settings
+		"[Visual Studio Dark][One Dark Pro][Solarized Dark][Solarized Light][Solarized Moon][Solarized Earth][Light Modern]": {
+
+			"activityBar.activeBackground": "#f6f6f6",
+			"activityBar.background": "#f6f6f6",
+			"activityBar.foreground": "#474747",
+			"activityBar.inactiveForeground": "#999999",
+			"editorGroupHeader.tabsBackground": "#d1d1d1",
+			"gitDecoration.modifiedResourceForeground": "#474747",
+			"gitDecoration.untrackedResourceForeground": "#474747",
+			"list.activeSelectionForeground": "#ffffff",
+			"list.errorForeground": "#333333",
+			"list.hoverBackground": "#f6f6f6",
+			"list.hoverForeground": "#474747",
+			"sideBar.background": "#f6f6f6",
+			"sideBar.foreground": "#474747",
+			"sideBarSectionHeader.background": "#f6f6f6",
+			"sideBarSectionHeader.border": "#f6f6f6",
+			"sideBarSectionHeader.foreground": "#474747",
+			"sideBarTitle.foreground": "#474747",
+			"statusBar.background": "#f6f6f6",
+			"statusBar.foreground": "#474747",
+			"tab.activeBackground": "#f6f6f6",
+			"tab.activeForeground": "#474747",
+			"tab.border": "#d1d1d1",
+			"tab.inactiveBackground": "#d1d1d1",
+			"tab.inactiveForeground": "#666666",
+			"titleBar.activeBackground": "#f6f6f6",
+			"titleBar.activeForeground": "#f6f6f6",
+			"editorCursor.background": "#A6E22D",
+			"editorCursor.foreground": "#A6E22D",			
+			"list.activeSelectionBackground": "#1469D1",
+			"list.focusBackground": "#B2C89D",
+			"list.focusForeground": "#000000",
+			"list.inactiveSelectionBackground": "#1469D1",
+			"list.inactiveSelectionForeground": "#ffffff",
+		}
+	},
+	
+	"workbench.colorTheme": "Visual Studio Dark",
+	"workbench.editor.showIcons": false,
+	"workbench.editor.tabCloseButton": "left",
+	"workbench.editor.tabSizing": "fit",
+	"workbench.iconTheme": "vscode-great-icons",
+	"workbench.preferredDarkColorTheme": "Arc Dark Theme",
+	"workbench.tree.renderIndentGuides": "none",
+	"editor.foldingStrategy": "indentation",
+	"explorer.confirmDelete": false,
+	"lldb.suppressUpdateNotifications": true,
+	"workbench.editor.empty.hint": "hidden",
+	"lldb.launch.expressions": "native",
+	"workbench.editor.tabActionLocation": "left",
+	"cmake.showOptionsMovedNotification": false,
+	"window.commandCenter": false,
+	"workbench.layoutControl.enabled": false,
+	"editor.trimAutoWhitespace": false,
+	"editor.accessibilitySupport": "off",
+	"redhat.telemetry.enabled": false,
+	"editor.unicodeHighlight.invisibleCharacters": false,
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"workbench.preferredLightColorTheme": "Visual Studio Dark",
+}
