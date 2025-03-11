@@ -57,7 +57,6 @@ alias xc="/Applications/Xcode\ 14.3.1.app/Contents/MacOS/Xcode"
 # Dev shortcuts
 alias appversion='~/Developer/Bash/version-number.sh'
 alias appversionshort='~/Developer/Bash/version-number-short.sh'
-alias dl="xcrun simctl openurl booted \"ebay://link?nav=webview&url=https://www.ebay.co.uk/explore\""
 alias makeft="./tools/npe/npe generate feature-toggles"
 
 # See https://github.com/eza-community/eza
