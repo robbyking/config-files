@@ -23,6 +23,7 @@ PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜$reset_color )"
 
 # PWD (Fast!)
 PROMPT+='$fg[cyan]%* $fg[blue][$fg[red]%d$fg[blue]] $fg[yellow]✘:$reset_color' 
+# PROMPT+='$fg[cyan]%* $fg[blue][$fg[red]%d$fg[blue]]$fg[yellow]($(~/Developer/Bash/version-number-short.sh))$fg[cyan]:$reset_color'
 # ⚛︎ ✘  ⌘ ⚡︎ ⚙︎ ⚒︎ ⚔︎ ⚜︎ ⚝︎ ⚞︎ ⚟︎ ⚠︎ ⚡︎ ⚢︎ ⚣︎ ⚤︎ ⚥︎ ⚦︎ ⚧︎ ⚨︎ ⚩︎ ⚪︎ ⚫︎ ⚬︎ ⚭︎ ⚮︎ ⚯︎ ⚰︎ ⚱︎ ⚲︎ ⚳︎ ⚴︎ ⚵︎ ⚶︎ ⚷︎
 # ⚸︎ ⚹︎ ⚺︎ ⚻︎ ⚼︎ ⚽︎ ⚾︎ ⚿︎ ⛀︎ ⛁︎ ⛂︎ ⛃︎ ⛄︎ ⛅︎ ⛆︎ ⛇︎ ⛈︎ ⛉︎ ⛊︎ ⛋︎ ⛌︎ ⛍︎ ⛎︎ ⛏︎ ⛐︎ ⛑︎ ⛒︎ ⛓︎ ⛔︎ ⛕︎ ⛖︎ ⛗︎ ⛘︎ ⛙︎ ⛚︎ 
 # ⛛︎ ⛜︎ ⛝︎ ⛞︎ ⛟︎ ⛠︎ ⛡︎ ⛢︎ ⛣︎ ⛤︎ ⛥︎ ⛦︎ ⛧︎ ⛨︎ ⛩︎ ⛪︎ ⛫︎ ⛬︎ ⛭︎ ⛮︎ ⛯︎ ⛰︎ ⛱︎ ⛲︎ ⛳︎ ⛴︎
@@ -53,14 +54,15 @@ alias gf="git fetch origin main"
 alias gl="git log --pretty=oneline"
 alias gp="git pull"
 alias gr="git reset --soft HEAD~1"
-alias gs="git status -uno"
+alias gs="appversion;git status -uno"
 alias todo="git diff | grep -A 3 TODO"
 alias xc="/Applications/Xcode\ 14.3.1.app/Contents/MacOS/Xcode"
 
 # Dev shortcuts
-alias ft="./tools/npe/npe generate feature-toggles"
-alias dl="xcrun simctl openurl booted \"ebay://link?nav=webview&url=https://www.ebay.co.uk/explore\""
 alias appversion='~/Developer/Bash/version-number.sh'
+alias appversionshort='~/Developer/Bash/version-number-short.sh'
+alias dl="xcrun simctl openurl booted \"ebay://link?nav=webview&url=https://www.ebay.co.uk/explore\""
+alias makeft="./tools/npe/npe generate feature-toggles"
 
 # See https://github.com/eza-community/eza
 alias la='eza -bhHla'
