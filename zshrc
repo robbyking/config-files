@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -27,7 +24,6 @@ PROMPT+='$fg[cyan]%* $fg[blue][$fg[red]%d$fg[blue]] $fg[yellow]✘:$reset_color'
 # ⚛︎ ✘  ⌘ ⚡︎ ⚙︎ ⚒︎ ⚔︎ ⚜︎ ⚝︎ ⚞︎ ⚟︎ ⚠︎ ⚡︎ ⚢︎ ⚣︎ ⚤︎ ⚥︎ ⚦︎ ⚧︎ ⚨︎ ⚩︎ ⚪︎ ⚫︎ ⚬︎ ⚭︎ ⚮︎ ⚯︎ ⚰︎ ⚱︎ ⚲︎ ⚳︎ ⚴︎ ⚵︎ ⚶︎ ⚷︎
 # ⚸︎ ⚹︎ ⚺︎ ⚻︎ ⚼︎ ⚽︎ ⚾︎ ⚿︎ ⛀︎ ⛁︎ ⛂︎ ⛃︎ ⛄︎ ⛅︎ ⛆︎ ⛇︎ ⛈︎ ⛉︎ ⛊︎ ⛋︎ ⛌︎ ⛍︎ ⛎︎ ⛏︎ ⛐︎ ⛑︎ ⛒︎ ⛓︎ ⛔︎ ⛕︎ ⛖︎ ⛗︎ ⛘︎ ⛙︎ ⛚︎ 
 # ⛛︎ ⛜︎ ⛝︎ ⛞︎ ⛟︎ ⛠︎ ⛡︎ ⛢︎ ⛣︎ ⛤︎ ⛥︎ ⛦︎ ⛧︎ ⛨︎ ⛩︎ ⛪︎ ⛫︎ ⛬︎ ⛭︎ ⛮︎ ⛯︎ ⛰︎ ⛱︎ ⛲︎ ⛳︎ ⛴︎
-
 
 # ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg_bold[blue]%}git:(%{$fg[red]%}"
 # ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
